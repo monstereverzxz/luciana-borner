@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Inscrição</h2>
+        
+        <form action="processar-dados.php" method="POST">
+            
+            <div class="tabs">
+                <label for="conjuge1">Cônjuge 1:</label>
+                <input type="text" id="conjuge1" name="conjuge1">
+                <p class="warning" id="conjuge1-warning"></p>
+
+                <label for="conjuge2">Cônjuge 2:</label>
+                <input type="text" id="conjuge2" name="conjuge2">
+                <p class="warning" id="conjuge2-warning"></p>
+
+                <label for="email">E-mail Principal:</label>
+                <input type="email" id="email" name="email" required>
+                <p class="warning" id="email-warning"></p>
+
+                <label for="email2">E-mail Secundário:</label>
+                <input type="email" id="email2" name="email2">
+                <p class="warning" id="email2-warning"></p>
+
+                <label for="phone1">Telefone Principal:</label>
+                <input type="tel" id="phone1" name="phone1" required>
+                <p class="warning" id="phone1-warning"></p>
+
+                <label for="phone2">Telefone Secundário:</label>
+                <input type="tel" id="phone2" name="phone2">
+                <p class="warning" id="phone2-warning"></p>
+
+                <p class="info-note"></p>
+                
+                <button type="submit">Enviar</button>
+                <p id="message"></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            const messageElement = document.getElementById('message');
+            
+            // Simulação de sucesso ou erro
+            const isSuccess = true; // Aqui você pode implementar a lógica para verificar o envio real do formulário
+            
+            if (isSuccess) {
+                messageElement.textContent = 'Formulário enviado com sucesso!';
+                messageElement.style.color = 'white';
+            } else {
+                messageElement.textContent = 'Falha no envio do formulário. Por favor, tente novamente.';
+                messageElement.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>

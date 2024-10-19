@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('piscina.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo branco com 5% de opacidade */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    backdrop-filter: blur(5px); /* Efeito de desfoque para suavizar a aparência */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Aumentei a margem inferior para dar mais espaço abaixo do título */
+    margin-top: 30px; /* Adicionando margem superior para afastar do topo */
+    color: #ffffff; /* Letra branca para maior contraste */
+    font-weight: bold; /* Negrito para melhor legibilidade */
+    font-size: 20px; /* Aumentando o tamanho da fonte para desktops */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto para maior visibilidade */
+}
+
+/* Media Queries para ajustar o tamanho da fonte em diferentes dispositivos */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 24px; /* Tamanho da fonte para dispositivos menores */
+        margin-top: 20px; /* Ajustando a margem superior em dispositivos menores */
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 20px; /* Tamanho da fonte ainda menor para dispositivos pequenos */
+        margin-top: 15px; /* Ajustando a margem superior em dispositivos pequenos */
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* Letra branca para maior contraste */
+    font-weight: bold; /* Negrito para melhor visibilidade */
+    font-size: 16px; /* Aumentando o tamanho da fonte dos labels */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparência leve nos inputs */
+    color: #ffffff; /* Texto em preto nos inputs */
+    font-size: 14px; /* Aumentando o tamanho da fonte dos inputs */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto nos inputs */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px; /* Aumentando o tamanho da fonte do botão */
+    font-weight: bold; /* Negrito para o botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    font-weight: bold; /* Negrito para mensagens */
+    font-size: 16px; /* Aumentando o tamanho da fonte das mensagens */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Sombra do texto nas mensagens */
+}
+
+.info-note {
+    text-align: center; /* Centraliza a informação */
+    margin: 15px 0; /* Margem acima e abaixo da informação */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor da informação */
+    font-weight: bold; /* Negrito para destaque */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto nas mensagens */
+}
+.warning {
+    color: rgb(255, 0, 0); /* Cor dos avisos */
+    font-size: 14px; /* Tamanho da fonte dos avisos */
+    margin-top: 5px; /* Margem acima dos avisos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto nas mensagens */
+}
